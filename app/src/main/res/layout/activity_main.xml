@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
@@ -11,122 +12,152 @@
     android:orientation="vertical">
 
     <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:minHeight="?attr/actionBarSize"
         android:layout_height="wrap_content"
-        app:titleTextColor="@android:color/white"
+        android:layout_width="match_parent"
+        app:titleTextColor="@color/white"
         android:background="?attr/colorPrimary"
-        android:layout_width="match_parent" />
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize" />
 
     <EditText
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:inputType="number"
-        android:id="@+id/targetText"
+        android:layout_marginTop="10dp"
         android:layout_below="@+id/toolbar"
         android:layout_centerHorizontal="true"
+        android:id="@+id/target_editText"
         android:background="@drawable/target_background"
-        android:text="100"
-        android:textColor="@android:color/white"
+        android:imeOptions="actionNext"
+        android:textCursorDrawable="@null"
+        android:textColor="@color/white"
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="normal|bold" />
 
     <LinearLayout
-        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_below="@+id/targetText"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/target_editText"
         android:orientation="horizontal"
-        android:id="@+id/linearLayout">
+        android:gravity="center"
+        android:id="@+id/numbers_layout" >
 
         <EditText
+            android:layout_marginRight="5dp"
             android:layout_width="50dp"
             android:layout_height="match_parent"
-            android:id="@+id/choice1"
-            android:inputType="number"
-            android:layout_marginStart="30dp"
-            android:textAlignment="center"
             android:background="@drawable/card_background"
-            android:text="10"
-            android:textColor="@android:color/white"
-            android:textStyle="normal|bold" />
+            android:id="@+id/number1_editText"
+            android:inputType="number"
+            android:textCursorDrawable="@null"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textStyle="normal|bold"
+            android:imeOptions="actionNext" />
 
         <EditText
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
             android:layout_width="50dp"
             android:layout_height="match_parent"
-            android:id="@+id/choice2"
-            android:inputType="number"
-            android:layout_marginLeft="10dp"
-            android:textAlignment="center"
-            android:text="10"
             android:background="@drawable/card_background"
-            android:textColor="@android:color/white"
-            android:textStyle="normal|bold" />
+            android:id="@+id/number2_editText"
+            android:inputType="number"
+            android:textCursorDrawable="@null"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textStyle="normal|bold"
+            android:imeOptions="actionNext" />
+
         <EditText
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
             android:layout_width="50dp"
             android:layout_height="match_parent"
-            android:id="@+id/choice3"
-            android:inputType="number"
-            android:layout_marginLeft="10dp"
-            android:textAlignment="center"
             android:background="@drawable/card_background"
-            android:textColor="@android:color/white"
-            android:text="10"
-            android:textStyle="normal|bold" />
+            android:id="@+id/number3_editText"
+            android:inputType="number"
+            android:textCursorDrawable="@null"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textStyle="normal|bold"
+            android:imeOptions="actionNext" />
+
         <EditText
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
             android:layout_width="50dp"
             android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
-            android:id="@+id/choice4"
-            android:inputType="number"
-            android:textAlignment="center"
             android:background="@drawable/card_background"
-            android:textColor="@android:color/white"
-            android:text="10"
-            android:textStyle="normal|bold" />
+            android:id="@+id/number4_editText"
+            android:inputType="number"
+            android:textCursorDrawable="@null"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textStyle="normal|bold"
+            android:imeOptions="actionNext" />
+
         <EditText
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
             android:layout_width="50dp"
             android:layout_height="match_parent"
-            android:id="@+id/choice5"
-            android:layout_marginLeft="10dp"
-            android:inputType="number"
-            android:textAlignment="center"
             android:background="@drawable/card_background"
-            android:textColor="@android:color/white"
-            android:text="10"
-            android:textStyle="normal|bold" />
+            android:id="@+id/number5_editText"
+            android:inputType="number"
+            android:textCursorDrawable="@null"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textStyle="normal|bold"
+            android:imeOptions="actionNext" />
+
         <EditText
+            android:layout_marginLeft="5dp"
             android:layout_width="50dp"
             android:layout_height="match_parent"
-            android:id="@+id/choice6"
-            android:inputType="number"
-            android:layout_marginLeft="10dp"
             android:background="@drawable/card_background"
+            android:id="@+id/number6_editText"
+            android:inputType="number"
+            android:textCursorDrawable="@null"
             android:textAlignment="center"
-            android:textColor="@android:color/white"
-            android:text="10"
+            android:textColor="@color/white"
             android:textStyle="normal|bold" />
+
     </LinearLayout>
 
-    <Button
-        android:text="Solve"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button"
-        android:onClick="solveQuestion"
-        android:layout_marginTop="24dp"
-        android:layout_below="@+id/linearLayout"
-        android:layout_centerHorizontal="true" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/numbers_layout"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/buttons_layout" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/numbers_layout"
+            android:onClick="solveQuestion"
+            android:text="@string/solve" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="randomize"
+            android:text="@string/randomize" />
+    </LinearLayout>
+
 
     <TextView
-        android:background="@drawable/solution_background"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/button"
-        android:layout_marginTop="34dp"
-        android:id="@+id/textView"
+        android:layout_below="@id/buttons_layout"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/solution_background"
         android:textSize="36sp"
-        android:textAlignment="center" />
-
+        android:textAlignment="center"
+        android:id="@+id/solution_textView"/>
 </RelativeLayout>

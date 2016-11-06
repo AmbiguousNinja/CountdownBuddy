@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Countdown Solver</string>
+    <string name="app_name">Countdown Buddy</string>
+    <string name="solve">Solve</string>
+    <string name="randomize">Randomize</string>
 </resources>
