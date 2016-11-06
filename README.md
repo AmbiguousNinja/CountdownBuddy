@@ -7,3 +7,7 @@ Currently solves the Numbers Game.
   <img src="https://raw.githubusercontent.com/AmbiguousNinja/CountdownBuddy/master/images/possible.png" width="350"/>
   <img src="https://raw.githubusercontent.com/AmbiguousNinja/CountdownBuddy/master/images/impossible.png" width="350"/>
 </p>
+
+Todo:
+- Finalize UI/UX
+- Letters Game solver
