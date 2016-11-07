@@ -1,0 +1,7 @@
+#Sun Nov 06 17:02:14 EST 2016
+base.0=/Users/TonyWu/AndroidStudioProjects/CountdownSolver/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_49f0aef2fbb9fb0ac8a93b2ce65d810f81b8536e
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/Users/TonyWu/AndroidStudioProjects/CountdownSolver/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_ff62ad73d0f541451502ab06195ac7baf69e4e83/classes.dex
+base.1=/Users/TonyWu/AndroidStudioProjects/CountdownSolver/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_ff62ad73d0f541451502ab06195ac7baf69e4e83
+file.0=/Users/TonyWu/AndroidStudioProjects/CountdownSolver/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_49f0aef2fbb9fb0ac8a93b2ce65d810f81b8536e/classes.dex
