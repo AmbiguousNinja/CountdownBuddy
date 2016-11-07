@@ -1,0 +1,282 @@
+/* IDs
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#active {
+  color: #2ECC71;
+}
+
+#black a {
+  color: black;
+}
+
+#black a:hover,
+.navbar a:hover {
+  color:#2ECC71;
+}
+
+/* Gallery
+Modified version of snippet by http://codepen.io/AMKohn/
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.gallery {
+  width: 500px;
+  height: 707px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+
+.gallery * {
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+.gallery input {
+  display: none;
+}
+
+.gallery-container {
+  display: block;
+}
+
+.gallery-content {
+  top: 0;
+  opacity: 0;
+  width: 500px;
+  height: 707px;
+  display: block;
+  position: absolute;
+
+  transform: scale(0);
+  -moz-transform: scale(0);
+  -webkit-transform: scale(0);
+}
+
+.gallery-content img {
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-nav label {
+  width: 50%;
+  height: 100%;
+  display: none;
+  position: absolute;
+
+  opacity: 0;
+  z-index: 9;
+  cursor: pointer;
+
+  transition: opacity .2s;
+  -moz-transition: opacity .2s;
+  -webkit-transition: opacity .2s;
+
+  color: #FFF;
+  font-size: 156pt;
+  text-align: center;
+  line-height: 600px;
+  background-color: rgba(0, 0, 0, .4);
+}
+
+.gallery-content:hover + .gallery-nav label {
+  opacity: 0.5;
+}
+
+.gallery-nav label:hover {
+  opacity: 1;
+}
+
+.gallery-nav .next {
+  right: 0;
+}
+
+input:checked + .gallery-container  .gallery-content {
+  opacity: 1;
+
+  transform: scale(1);
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+}
+
+input:checked + .gallery-container .gallery-nav label {
+  display: block;
+}
+
+/* Navbar
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.navbar {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+.navlist {
+  padding-top: 1.5rem;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.navlist ul {
+  list-style-type: none;
+  margin-bottom: 0;
+}
+
+.navlist li {
+  display: inline-block;
+}
+
+.navlist li a {
+  padding-right: 2rem;
+}
+
+.navlist li:last-child a{
+  padding-right: 0;
+}
+
+/* Hero
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+body, html {  /* Allows the parallax effect */
+  height: 100%;
+}
+
+.superhero {
+  background-size: cover;
+  color: #FFF;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  height: 100%;
+}
+
+
+.hero {
+  background-size: cover;
+  color: black;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  height: 50%;
+}
+
+.hero-content {
+    padding-top: 5rem;
+
+    display: flex;
+    height: 80%;
+}
+
+.lower {
+  display: inline-block;
+  align-self: flex-end;
+}
+
+/* Button TODO - Rewrite
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.ambiguousbtn {
+  border-radius: 0px;
+  display: inline-block;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  background: #2EDB80;
+  color: white;
+}
+
+.ambiguousbtn:hover {
+  background: #28BD6E;
+  color: #fff;
+}
+
+.body-title {
+  color: white;
+  margin-top: -1.25em;
+  padding-bottom: 0.5em;
+}
+
+.zero-body-title {
+  color: black;
+  margin-top: 1em;
+  padding-bottom: 0.5em;
+}
+
+.zero-body-tagline {
+  font-style: italic;
+}
+
+.experience {
+  padding-top: 4rem;
+  align-self: left;
+}
+
+.experience img {
+  width: 150px;
+  float: right;
+}
+
+/* Teaser
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.teasers {
+  padding-top: 3rem;
+}
+
+.teaser:hover {
+  opacity: 1.0;
+}
+
+.teaser a{
+  text-decoration: none;
+  color: black;
+}
+
+.teaser a:hover h3 {
+  color: #2ECC71;
+}
+
+.teaser img {
+  display: block;
+  margin-bottom: 2rem;
+  max-width: 95%;
+}
+
+.teaser img:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media (min-width: 0px) {
+  .navbar {
+    text-align: center;
+  }
+}
+/* Bigger than 550 */
+@media (min-width: 550px) {
+  .navbar {
+    text-align: left;
+  }
+}
+
+/* Bigger than 750 */
+@media (min-width: 750px) {
+  .navbar {
+    text-align: left;
+  }
+}
+
+/* Bigger than 1000 */
+@media (min-width: 1000px) {
+  .navbar {
+    text-align: left;
+  }
+}
